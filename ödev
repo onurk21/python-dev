@@ -1,0 +1,52 @@
+# 1)Python'da Veri Tiplerini araştırınız, her bir veri tipi için kendi cümlelerinizle açıklamalar yazınız.
+Metinsel (string) veri tipleri: str
+Sayısal (numerik) veri tipleri: int, float, complex
+Sıralama (sequence) veri tipleri: list, tuple, range
+Haritalama (mapping) veri tipleri: dict
+Kümeler (set) veri tipleri: set, frozenset
+Mantıksal (boolean) veri tipleri: bool
+İkili veri tipleri: bytes, bytearray, memoryview
+str, metinsel verileri temsil ederken int, float ve complex, sayısal verileri temsil eder. list, tuple ve range, sıralı verileri, dict, haritalanmış verileri, set ve frozenset, kümeleri ve bool, True veya False gibi mantıksal ifadeleri temsil eder. bytes, bytearray ve memoryview ise ikili verileri temsil eder.
+
+
+# 2) Kodlama.io sitesinde değişken olarak kullanıldığını düşündüğünüz verileri, veri tipleriyle birlikte örneklendiriniz.
+
+Öncelikle bir değişken adı belirlemeli ve sağ tarafına atama işlemi yaparak bir değer atamalıyız. Örneğin:
+
+ilginc_degisken = 7
+
+Sonra değişkenin adını belirleyip sağ tarafına yeni bir değer atamalıyız. Örneğin:
+
+ilginc_degisken = 10
+
+Bir örnek senaryo olarak, bir kamp programında öğrencilerin ilerleme durumunu takip etmek istediğimizi düşünelim. Öğrenciler, dersleri izledikten sonra bir değerlendirme aşamasından geçerler ve ödevleri tamamlamışlarsa ilerleme kaydederler. Aksi takdirde ilerleme kaydedilmez. Bu durumu bir değişkende saklayabiliriz. Örneğin:
+
+ilerleme_durumu = True # Ödevler yapıldıysa ilerleme kaydedilir, yapılmadıysa kaydedilmez.
+
+Bu durumda, ödevler yapıldığı için ilerleme kaydedildiğinden ilerleme_durumu değişkeninin değeri True olacaktır.
+
+Eğer ödevler yapılmadıysa ilerleme kaydedilmez ve ilerleme_durumu değişkeninin değeri False olacaktır.
+
+Aşamalar tamamlandıktan sonra ilerleme_durumu değişkeninin değeri %100 olacaktır. Bunun için bir int veri tipinde bir değişken tanımlayabiliriz. Örneğin:
+
+tamamlanma_yuzdesi = 100
+
+Bu değişken, aşamaların tamamlanmasından sonra %100 olarak güncellenebilir.
+
+
+# 3)Kodlama.io sitesinde giriş yap kısmı şart bloğuna örnek olarsk
+
+mail = "kocyigit@gmail.com"
+password = "12345"
+
+mailbox = input("Mail giriniz: ")
+password_input = input("Şifre giriniz: ")
+
+if mailbox == mail and password_input == password:
+     print("Siteye giriş yapıldı.")
+else:
+    if mailbox != mail:
+        print("Email yanlış.")
+    elif password_input != password:
+        print("Şifre yanlış.")
+
